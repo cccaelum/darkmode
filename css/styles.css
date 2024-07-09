@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 28px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.darkmodediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+span {
+    font-size: 18px;
+}
+
+.btn {
+    display: flex;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-sun, .icon-moon {
+    display: inline-block;
+    width: 50%;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.icon-moon {
+    opacity: 0; 
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin: 10px 180px 10px 180px;
+    line-height: 20px;
+}
+
+
+/* Estilos para el modo oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .btn {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode h1, .dark-mode h2 {
+    color: #ffe324;
+}
+.dark-mode .texto {
+    background-color: #121212;
+}
+
+.dark-mode .icon-sun {
+    opacity: 0; 
+}
+
+.dark-mode .icon-moon {
+    opacity: 1; 
+}
